@@ -4,3 +4,17 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+      
+microservice:
+  product-service:
+    endpoints:
+      endpoint:
+        uri: http://PRODUCT
+  order-service:
+    endpoints:
+      endpoint:
+        uri: http://ORDER
+  customer-service:
+    endpoints:
+      endpoint:
+        uri: http://CUSTOMER
